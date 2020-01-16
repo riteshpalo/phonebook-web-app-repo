@@ -1,0 +1,6 @@
+Hi ${NAME},
+ Warm greetings!!!
+ Your Mobile Number : ${MOB} is successfully Added to your friend ${FRIEND-NAME}'s PhoneBook
+ 
+ Thanks&regards,
+ RPCL Team.  

@@ -1,0 +1,37 @@
+server:
+  port: 9999
+#datasource cfg  
+spring:  datasource:    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password: 
+    
+  jpa:    show-sql: true
+    hibernate:      ddl-auto: update
+    properties:      hibernate: 
+        dialect: org.hibernate.dialect.H2Dialect
+        format_sql: false      
+#view resolver cfg     mvc:    view:      prefix: /views/
+      suffix: .jsp
+#SMTP properties        mail:
+    host: smtp.gmail.com
+    port: 587
+    username: riteshpalo18@gmail.com
+    password: 31@Itriya
+    protocol: smtp
+    tls: true
+    properties.mail.smtp:
+        auth: true
+        starttls.enable: true
+        ssl.trust: smtp.gmail.com 
+      
+#String literal value cfg
+app: 
+  messages: 
+    save-success: Contact Saved Successfully 
+    save-error: Contact Does Not Save Successfully
+    update-success: Contact Updated Successfully
+    update-error: Contact Does Not Updated Successfully
+    
+
+        
